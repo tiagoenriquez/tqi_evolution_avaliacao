@@ -22,7 +22,7 @@ public class DetalheClienteServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Optional<Cliente> optional = clienteRepository.findByEmail(email);
-        if (optional.isEmpty()) {
+        if (!optional.isPresent()) {
             throw new UsernameNotFoundException("Cliente não encontrado");
         }
         return new DetalheClienteData(optional);
