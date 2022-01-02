@@ -1,5 +1,6 @@
 package com.tiagoenriquez.tqi_evolution_avaliacao.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,6 +35,7 @@ public class Cliente {
 
     private BigDecimal renda;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String senha;
 
 }

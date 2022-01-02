@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -20,9 +20,11 @@ public class SolicitacaoDeEmprestimo {
 
     private BigDecimal valorDoEmprestimo;
 
-    private Date dataDaPrimeiraParcela;
+    private LocalDate dataDaPrimeiraParcela;
 
     private Integer quantidadeDeParcelas;
+
+    private Integer idCliente;
 
     @MapsId("idCliente")
     @ManyToOne
