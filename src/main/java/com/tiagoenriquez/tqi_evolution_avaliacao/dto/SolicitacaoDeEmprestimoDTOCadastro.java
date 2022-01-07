@@ -1,4 +1,4 @@
-package com.tiagoenriquez.tqi_evolution_avaliacao.models;
+package com.tiagoenriquez.tqi_evolution_avaliacao.dto;
 
 import lombok.Data;
 

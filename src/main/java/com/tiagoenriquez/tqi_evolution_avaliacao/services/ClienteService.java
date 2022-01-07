@@ -17,6 +17,7 @@ public class ClienteService {
 
     private final ClienteRepository clienteRepository;
     private final PasswordEncoder passwordEncoder;
+
     public ClienteService(ClienteRepository clienteRepository, PasswordEncoder passwordEncoder) {
         this.clienteRepository = clienteRepository;
         this.passwordEncoder = passwordEncoder;
@@ -38,13 +39,18 @@ public class ClienteService {
     }
 
     /**
-     * Cadastra um cliente novo no banco de dados.
+     *
      * @param cliente
      * @return
+     * @throws Exception
      */
-    public ResponseEntity<Cliente> inserir(Cliente cliente) {
-        cliente.setSenha(passwordEncoder.encode(cliente.getSenha()));
-        return ResponseEntity.ok(clienteRepository.save(cliente));
+    public ResponseEntity<Cliente> inserir(Cliente cliente) throws Exception {
+        try {
+            cliente.setSenha(passwordEncoder.encode(cliente.getSenha()));
+            return ResponseEntity.ok(clienteRepository.save(cliente));
+        } catch (Exception exception) {
+            throw new Exception("Erro ao tentar salvar o cliente no banco de dados: " + exception.getMessage());
+        }
     }
 
 }

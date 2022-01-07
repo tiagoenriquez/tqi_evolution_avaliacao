@@ -1,4 +1,4 @@
-package com.tiagoenriquez.tqi_evolution_avaliacao.datas;
+package com.tiagoenriquez.tqi_evolution_avaliacao.data;
 
 import com.tiagoenriquez.tqi_evolution_avaliacao.models.Cliente;
 import org.springframework.security.core.GrantedAuthority;

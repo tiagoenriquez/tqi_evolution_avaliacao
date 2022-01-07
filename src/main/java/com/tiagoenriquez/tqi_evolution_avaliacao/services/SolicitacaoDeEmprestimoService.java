@@ -2,12 +2,9 @@ package com.tiagoenriquez.tqi_evolution_avaliacao.services;
 
 import com.tiagoenriquez.tqi_evolution_avaliacao.models.Cliente;
 import com.tiagoenriquez.tqi_evolution_avaliacao.models.SolicitacaoDeEmprestimo;
-import com.tiagoenriquez.tqi_evolution_avaliacao.models.SolicitacaoDeEmprestimoDTOCadastro;
-import com.tiagoenriquez.tqi_evolution_avaliacao.models.SolicitacaoDeEmprestimoDTOListagem;
+import com.tiagoenriquez.tqi_evolution_avaliacao.dto.SolicitacaoDeEmprestimoDTOCadastro;
+import com.tiagoenriquez.tqi_evolution_avaliacao.dto.SolicitacaoDeEmprestimoDTOListagem;
 import com.tiagoenriquez.tqi_evolution_avaliacao.repositories.SolicitacaoDeEmprestimoRepository;
-import lombok.val;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.jpa.repository.query.AbstractJpaQuery;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 

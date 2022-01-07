@@ -1,6 +1,6 @@
 package com.tiagoenriquez.tqi_evolution_avaliacao.services;
 
-import com.tiagoenriquez.tqi_evolution_avaliacao.datas.DetalheClienteData;
+import com.tiagoenriquez.tqi_evolution_avaliacao.data.DetalheClienteData;
 import com.tiagoenriquez.tqi_evolution_avaliacao.models.Cliente;
 import com.tiagoenriquez.tqi_evolution_avaliacao.repositories.ClienteRepository;
 import org.springframework.security.core.userdetails.UserDetails;

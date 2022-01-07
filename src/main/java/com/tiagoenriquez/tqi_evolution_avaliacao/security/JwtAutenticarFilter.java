@@ -3,7 +3,7 @@ package com.tiagoenriquez.tqi_evolution_avaliacao.security;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tiagoenriquez.tqi_evolution_avaliacao.datas.DetalheClienteData;
+import com.tiagoenriquez.tqi_evolution_avaliacao.data.DetalheClienteData;
 import com.tiagoenriquez.tqi_evolution_avaliacao.models.Cliente;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
