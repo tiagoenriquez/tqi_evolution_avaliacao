@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
+/**
+ * Classe que determina os atributos do cliente.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

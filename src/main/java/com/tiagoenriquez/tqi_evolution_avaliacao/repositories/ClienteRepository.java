@@ -5,6 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
+/**
+ * Interface responsável por persistir e recuperar dados de clientes no banco de dados.
+ */
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
     /**

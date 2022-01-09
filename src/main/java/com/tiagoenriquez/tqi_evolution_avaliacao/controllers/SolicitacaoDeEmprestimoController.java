@@ -8,6 +8,11 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Classe controladora, que faz a comunicação com os endpoints relacionaodos com cadastro e pesquisa de dados de solicitações de empréstimo. Se
+ * forem criadas funções para atualização ou remoção de solicitações de empréstimo, a parte que comunica diretamente
+ * com o endpoint deve ser escrita aqui.
+ */
 @RestController
 @RequestMapping(value = "api/solicitacoes-de-emprestimo")
 public class SolicitacaoDeEmprestimoController {

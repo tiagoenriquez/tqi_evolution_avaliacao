@@ -8,6 +8,11 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Classe controladora, que faz a comunicação com o endpoint responsável por cadastro de cliente. Se porventura alguém quiser criar uma função
+ * para atualização, exclusão ou pesquisa de dados de clientes, deve escrever a parte que comunica diretamente com o
+ * endpoint aqui.
+ */
 @RestController
 @RequestMapping("/api/clientes")
 public class ClienteController {

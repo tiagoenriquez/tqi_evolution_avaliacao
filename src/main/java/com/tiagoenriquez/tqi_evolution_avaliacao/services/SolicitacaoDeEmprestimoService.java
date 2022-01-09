@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Classe de serviço, que faz a comunicação entre a classe controladora de solicitações de empréstimo e seu respectivo
+ * repositório. Esta é também a classe responsável pelas regras de negócio referentes a essas solicitações.
+ */
 @Service
 public class SolicitacaoDeEmprestimoService {
 

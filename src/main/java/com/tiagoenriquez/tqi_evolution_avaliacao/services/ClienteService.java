@@ -8,10 +8,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.util.Date;
-import java.util.Optional;
-
+/**
+ * Classe de serviço, que faz a comunicação entre a classe controladora de cliente e o repositório de cliente. Regras
+ * de negócio relacionadas a clientes devem ser escritas aqui.
+ */
 @Service
 public class ClienteService {
 
@@ -39,7 +39,7 @@ public class ClienteService {
     }
 
     /**
-     *
+     * Recebe dados de um cliente e envia-os ao repositório para persistência.
      * @param cliente
      * @return
      * @throws Exception

@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+/**
+ * Contem os atributos das solicitações de empréstimo que retornam ao cliente na requisição de listagem.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -5,6 +5,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+/**
+ * Contém atributos das solicitações de empréstimo que os clientes informam durante o cadastro da solicitação.
+ */
 @Data
 public class SolicitacaoDeEmprestimoDTOCadastro {
 

@@ -8,6 +8,9 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+/**
+ * Classe que determina quais informações sobre solicitação de empréstimo devem ser guardadas e recuperadas no sistema.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

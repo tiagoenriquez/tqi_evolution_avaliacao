@@ -14,6 +14,9 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+/**
+ * Configura o funcionamento do JWT.
+ */
 @EnableWebSecurity
 public class JwtConfiguracao extends WebSecurityConfigurerAdapter {
 
@@ -30,6 +33,11 @@ public class JwtConfiguracao extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(clienteService).passwordEncoder(passwordEncoder);
     }
 
+    /**
+     * Libera a rota de verbo post "/login", responsável pelo login, da necessidade de token.
+     * @param http
+     * @throws Exception
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().authorizeRequests()
@@ -41,11 +49,20 @@ public class JwtConfiguracao extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
 
+    /**
+     * Libera a rota de verbo get "/api/clientes/cadastro", responsável pelo login, da necessidade de token.
+     * @param web
+     * @throws Exception
+     */
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/api/clientes/cadastro");
     }
 
+    /**
+     * Permite que o sistema seja acessado por domínios externos. É importante comentar este método em modo de produção.
+     * @return
+     */
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();

@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+/**
+ * Classe que implementa o serviço padrão de validação de usuário do Spring Security.
+ */
 @Component
 public class DetalheClienteServiceImpl implements UserDetailsService {
 
@@ -19,6 +22,13 @@ public class DetalheClienteServiceImpl implements UserDetailsService {
         this.clienteRepository = clienteRepository;
     }
 
+    /**
+     * Verifica se existe um cliente com o e-mail passado na tentativa de login e retorna um cliente com os dados de
+     * login nos moldes do Spring Security (a classe que implementa UserDetails).
+     * @param email
+     * @return
+     * @throws UsernameNotFoundException
+     */
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Optional<Cliente> optional = clienteRepository.findByEmail(email);
