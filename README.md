@@ -19,7 +19,7 @@ Esta API está disponível para uso por meio do endereço eletrônico https://tq
  - regras: não podem haver dois clientes com o mesmo "cpf", nem com o mesmo "rg".
 
 2
- - path: /api/login
+ - path: /login
  - verbo: POST
  - keys (body): email (string); senha (string)
  - descrição: o cliente faz login no sistema e recebe um token de autenticação.
