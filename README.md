@@ -19,14 +19,14 @@ As pessoas cadastradas até este momento no sistema são fictícias e seus dados
  - verbo: POST
  - keys (body): nome (string); email (string); cpf (string); rg (string); renda (decimal); endereco (string); senha (string)
  - descrição: o cliente se cadastra no sistema e recebe os dados do cadastro.
- - regras: não podem haver dois clientes com o mesmo "cpf", nem com o mesmo "rg".<br>
+ - regras: não podem haver dois clientes com o mesmo "cpf", nem com o mesmo "rg".<hr>
 
 2
  - path: /login
  - verbo: POST
  - keys (body): email (string); senha (string)
  - descrição: o cliente faz login no sistema e recebe um token de autenticação.
- - regras: o cliente só pode fazer login se tiver cadastro e a senha for passada corretamente.<br>
+ - regras: o cliente só pode fazer login se tiver cadastro e a senha for passada corretamente.<hr>
 
 3
  - path: /api/solicitacoes-de-emprestimo/cadastro
@@ -34,14 +34,14 @@ As pessoas cadastradas até este momento no sistema são fictícias e seus dados
  - header: Authentication: bearer <token de autenticação>
  - keys (body): valorDoEmprestimo (decimal); dataDaPrimeiraParcela (string); quantidadeDeParcelas (inteiro)
  - descrição: o cliente faz solicitação de empréstimo e recebe os dados da solicitação.
- - regras: o cliente deve estar logado, a data da primeira parcela deve estar dentro dos próximos 3 meses (90 dias) e a quantidade de parcelas é no máximo 60.<br>
+ - regras: o cliente deve estar logado, a data da primeira parcela deve estar dentro dos próximos 3 meses (90 dias) e a quantidade de parcelas é no máximo 60.<hr>
 
 4
  - path: /api/solicitacoes-de-emprestimo/todas-do-cliente-logado
  - verbo: GET
  - header: Authentication: bearer <token de autenticação>
  - descrição: o cliente recebe a lista de solicitações de empréstimo feitas por ele com informação de id, valor do empréstimo e quantidade de parcelas.
- - regras: o cliente deve estar logado.<br>
+ - regras: o cliente deve estar logado.<hr>
 
 5
  - path: /api/solicitacoes-de-emprestimo/detalhes/<id da solicitação de empréstimo>
@@ -49,6 +49,6 @@ As pessoas cadastradas até este momento no sistema são fictícias e seus dados
  - keys (param): idCliente (inteiro)
  - header: Authentication: bearer <token de autenticação>
  - descrição: o cliente informa o seu id da solicitação de empréstimo por param e recebe todas as informações referentes a essa solicitação.
- - regras: o cliente deve estar logado e a solicitação de empréstimo deve ter sido feita por ele.<br>
+ - regras: o cliente deve estar logado e a solicitação de empréstimo deve ter sido feita por ele.<hr>
  
 Boa sorte no uso desta API.
