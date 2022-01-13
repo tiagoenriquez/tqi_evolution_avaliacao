@@ -1,12 +1,12 @@
 # TQI Evolution Avaliação 2021
 
-API para cadastro de clientes e solicitação de empréstimo bancário escrita em Java com os recursos do framework Spring Boot.
+API para cadastro de clientes e solicitação de empréstimo bancário escrita em Java com os recursos do framework Spring Boot.<br>
 Esta API foi inicialiazada através do Spring Initializr e utiliza as seguintes dependências:
  - Lombok: para evitar escrita de métodos comuns a classes de modelos;
  - Spring Web: para usar anotações e classes de API Rest;
  - Spring Security: para criptografar senha e autenticar os clientes
  - PostgreSQL Driver: para conexão com banco de dados PostgreSQL
- - Auth0: para autenticar os clientes com JWT
+ - Auth0: para autenticar os clientes com JWT<br>
 Esta API está disponível para uso por meio do endereço eletrônico https://tqi-tiago.herokuapp.com.<br>
 A documentação pode ser acessada no endereço https://documenter.getpostman.com/view/9473424/UVXhpvxo.<br>
 As pessoas cadastradas até este momento no sistema são fictícias e seus dados foram obtidos através de sorteio.
