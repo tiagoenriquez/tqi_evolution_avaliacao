@@ -8,7 +8,7 @@ Esta API foi inicialiazada através do Spring Initializr e utiliza as seguintes 
  - PostgreSQL Driver: para conexão com banco de dados PostgreSQL
  - Auth0: para autenticar os clientes com JWT
 
-Esta API está disponível para uso por meio do endereço eletrônico https://tqi-tiago.herokuapp.com.<br>
+Esta API está disponível para uso por meio do endereço eletrônico https://tqi-tiago.herokuapp.com e seu deploy foi feito meramente para testes.<br>
 A documentação pode ser acessada no endereço https://documenter.getpostman.com/view/9473424/UVXhpvxo.<br>
 As pessoas cadastradas até este momento no sistema são fictícias e seus dados foram obtidos através de sorteio.
 
